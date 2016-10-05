@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>XXXXXXXXXXXXX</title>
+
+    <!-- Bootstrap Core  -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!--Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header uppercase">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Marca</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="host"><a href="host.php">¿Querés Hostear?</a></li>
+        <li class="openhelp"><a href="ayuda.php" class="ayudamobile">Ayuda</a><a class="ayudadesktop">Ayuda</a></li>
+        <li class="openregs"><a href="registracion.php" class="registracionmobile">Registración</a><a class="registraciondesktop">Registración</a></li>
+        <li class="opensession"><a href="sesion.php" class="sesionmobile">Sesión</a><a class="sesiondesktop">Sesión</a></li>
+      </ul>
+        
+      <!-- Modal Help-->
+        <div class="modal fade" id="modalhelp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" id="modaldialoghelp" role="document">
+            <div class="modal-content" id="modalcontenthelp">
+              <ul class="modal-body">
+
+                <li class="questionhelp primera"><p>¿Que es XXXXXXXXXX?<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                  <ul>
+                    <li class="questionanswer">XXXXX es un sitio dedicado a proveer facilidades inmobiliarias para startups bajo la modalidad de espacios de coworking.</li>
+                  </ul>
+                </li>
+                
+                <li class="questionhelp"><p>¿Como alquilar una oficina?<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                  <ul>
+                    <li class="questionanswer">En tres simples pasos podes iniciar tu negocio. Te registras en el sitio, elegis la oficina y alquilas. Facilitamos el proceso de busqueda para que hagas lo que mas te gusta hacer. </li>
+                  </ul>
+                </li>
+              
+                <li class="questionhelp"><p>Convertite en Host<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                  <ul>
+                    <li class="questionanswer">Si te sobra un ambiente en tu casa, con XXXXXX podes ganarte desde $1.500 pesos por mes, si lo publicas y hosteas a alguna empresa.</li>
+                  </ul>
+                </li>
+              
+                <li class="questionhelp"><p>Quienes somos<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                  <ul>
+                    <li class="questionanswer">Somos 3 alumnos de la clase de Full Stack, que solamente queremos cambiar el mundo y en el mientras tanto llenarnos de plata. </li>
+                  </ul>
+                </li>
+              
+                <li class="questionhelp quinta"><p>Contacto<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                  <ul>
+                    <li class="questionanswer">Contactate con nosotros por cualquier duda o consulta a <span>soporte@xxxxxxx.com</span></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Session modal-->
+        <div class="modal fade" id="modalsession" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" id="modalsessiondialog"role="document">
+            <form method="GET" class="modal-content" id="modalsessioncontent" action="welcome.php">
+              <div class="modal-body" id="modalbodysession">
+                <div class="username">
+                  <label>Nombre de usuario</label>
+                  <input class="nombresession" type="email" placeholder="email">
+                </div>
+                <div class="password">
+                  <label>Password</label>
+                  <input type="password" placeholder="password">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+              </div>
+            </form>
+            </div>
+          </div>
+
+           <!-- Regs modal-->
+
+          <div class="modal fade" id="modalregs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" id="modalregdialog"role="document">
+            <div class="modal-content" id="modalregcontent">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body" id="modalbodysession">
+              <div class="sessiontitle uppercase">
+                  <h1>Registración</h1>
+                  <h2> Completá tus datos para comenzar</h2>
+              </div>
+                <div class="username">
+                  <label>Nombre</label>
+                  <input class="nombreregs" type="text" placeholder="Nombre">
+                </div>
+                <div class="username">
+                  <label>Apellido</label>
+                  <input class="apellidoregs" type="text" placeholder="Apellido">
+                </div>
+                <div class="username">
+                  <label>Correo electronico</label>
+                  <input class="emailregs" type="email" placeholder="Email">
+                </div>
+                <div class="username">
+                  <label>Password</label>
+                  <input class="passwordregs" type="password" placeholder="Password">
+                </div>
+                <div class="username">
+                  <label>Confirmar Password</label>
+                  <input class="confirmpassregs" type="confimar password" placeholder="Password">
+                </div>
+                <div class="regslinks">
+                  <p> Conectar vía </p>
+                  <button type="button" class="btn btn-primary facebook"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                  <button type="button" class="btn btn-success linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></button>
+                  <button type="button" class="btn btn-warning google"><i class="fa fa-google" aria-hidden="true"></i></button>
+                </div>             
+              </div>
+              <div class="modal-footer">
+                <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+              </div>
+            </div>
+            </div>
+          </div>
+
+        </div>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<header id="header">
+      <div class="header-darkener"></div>
+      <div class="principal">
+        <div class="titulo">
+          <h2>UN LUGAR DÓNDE TRABAJAR</h2>
+        </div>
+      </div>
+      <div class="subtitulo">
+        <div class="bajada col-md-12">
+          <h2>Alquilá un espacio de oficina a tu medida y montá tu emprendimiento ahora.</h2>
+        </div>
+      </div>
+      <div class="containerform">
+          <form class="form-position">
+              <select type="text" name="location" class="form-control location-border">
+                <option disabled selected hidden>¿En qué ciudad deseas alquilar?</option>
+                <option>Ciudad de Buenos Aires</option>       
+                <option>Córdoba</option>       
+                <option>Rosario</option>
+              </select>
+          </form>
+      </div>
+</header>
+
+    <!-- 3 steps section -->
+
+    <section id="pr_sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+        <div class="title_sec">
+          <h1>TRES PASOS PARA COMENZAR</h1>
+          <h2>La solucion para tu empresa a tres clicks de distancia</h2>
+        </div>      
+      </div>    
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="service">           
+          <i class="fa fa-search"></i>
+          <h2>Registrate</h2>
+          <div class="service_hoverly">
+            <i class="fa fa-search"></i>
+            <h2>Registrate</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ab odio quas  , voluptate aspernatur!</p>
+          </div>
+        </div>
+      </div>        
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="service">           
+          <i class="fa fa-building"></i>
+          <h2>Busca el mejor lugar</h2>
+          <div class="service_hoverly">
+            <i class="fa fa-building"></i>
+            <h2>Busca el mejor lugar</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ab odio quas  , voluptate aspernatur!</p>
+          </div>
+        </div>
+      </div>        
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="service">           
+          <i class="fa fa-paper-plane"></i>
+          <h2>Reservalo</h2>
+          <div class="service_hoverly">
+            <i class="fa fa-paper-plane"></i>
+            <h2>Reservalo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ab odio quas  , voluptate aspernatur!</p>
+          </div>
+        </div>
+      </div>              
+    </div>
+  </div>
+</section>
+
+
+    <!-- jQuery -->
+    <script   src="js/jquery-2.1.1.js"></script>
+
+    <!--javascript customize-->
+    <script src="js/main.js"></script>
+
+    <!-- Bootstrap Core CDN -->
+    <script src="js/bootstrap.min.js" ></script>
+
+</body>
+
+</html>
