@@ -46,14 +46,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Marca</a>
+      <a class="navbar-brand" href="index.html">Marca</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       
       <ul class="nav navbar-nav navbar-right">
-        <li class="host"><a href="host.php">¿Querés Hostear?</a></li>
+        <li class="host"><a href="host.php" class="hostmobile">¿Querés Hostear?</a><a class="hostdesktop" id="myBtn">¿Querés Hostear?</a></li>
         <li class="openhelp"><a href="ayuda.php" class="ayudamobile">Ayuda</a><a class="ayudadesktop">Ayuda</a></li>
         <li class="openregs"><a href="registracion.php" class="registracionmobile">Registración</a><a class="registraciondesktop">Registración</a></li>
         <li class="opensession"><a href="sesion.php" class="sesionmobile">Sesión</a><a class="sesiondesktop">Sesión</a></li>
@@ -100,76 +100,86 @@
           </div>
         </div>
 
-        <!-- Session modal-->
-        <div class="modal fade" id="modalsession" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" id="modalsessiondialog"role="document">
-            <form method="GET" class="modal-content" id="modalsessioncontent" action="welcome.php">
-              <div class="modal-body" id="modalbodysession">
-                <div class="username">
-                  <label>Nombre de usuario</label>
-                  <input class="nombresession" type="email" placeholder="email">
-                </div>
-                <div class="password">
-                  <label>Password</label>
-                  <input type="password" placeholder="password">
+        <!-- Host modal-->
+          <div class="modal fade" id="modalhost" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" id="modalhostdialog"role="document">
+              <div class="modal-content" id="modalhostcontent" action="welcome.php">
+                <div class="modal-body" id="modalbodyhost">
+                  <div class="hosttext">
+                    <p>Password</p>
+                  </div>
                 </div>
               </div>
-              <div class="modal-footer">
-                <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-              </div>
-            </form>
             </div>
           </div>
+
+        <!-- Session modal-->
+          <div class="modal fade" id="modalsession" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" id="modalsessiondialog"role="document">
+              <form method="GET" class="modal-content" id="modalsessioncontent" action="welcome.php">
+                <div class="modal-body" id="modalbodysession">
+                  <div class="username">
+                    <label>Nombre de usuario</label>
+                    <input class="nombresession" type="email" placeholder="email">
+                  </div>
+                  <div class="password">
+                    <label>Password</label>
+                    <input type="password" placeholder="password">
+                  </div>
+                </div>
+                <div class="footersession">
+                  <button type="submit" class="btn btn-primary sessionbutton">Acceder</button>
+                </div>
+              </form>
+              </div>
+            </div>
 
            <!-- Regs modal-->
-
-          <div class="modal fade" id="modalregs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" id="modalregdialog"role="document">
-            <div class="modal-content" id="modalregcontent">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              </div>
-              <div class="modal-body" id="modalbodysession">
-              <div class="sessiontitle uppercase">
-                  <h1>Registración</h1>
-                  <h2> Completá tus datos para comenzar</h2>
-              </div>
-                <div class="username">
-                  <label>Nombre</label>
-                  <input class="nombreregs" type="text" placeholder="Nombre">
+            <div class="modal fade" id="modalregs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" id="modalregdialog"role="document">
+                <div class="modal-content" id="modalregcontent">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body" id="modalbodysession">
+                  <div class="sessiontitle uppercase">
+                      <h1>Registración</h1>
+                      <h2> Completá tus datos para comenzar</h2>
+                  </div>
+                    <div class="usernameregs">
+                      <label>Nombre</label>
+                      <input class="nombreregs" type="text" placeholder="Nombre">
+                    </div>
+                    <div class="usernameregs">
+                      <label>Apellido</label>
+                      <input class="apellidoregs" type="text" placeholder="Apellido">
+                    </div>
+                    <div class="usernameregs">
+                      <label>Correo electronico</label>
+                      <input class="emailregs" type="email" placeholder="Email">
+                    </div>
+                    <div class="usernameregs">
+                      <label>Password</label>
+                      <input class="passwordregs" type="password" placeholder="Password">
+                    </div>
+                    <div class="usernameregs">
+                      <label>Confirmar Password</label>
+                      <input class="confirmpassregs" type="confimar password" placeholder="Password">
+                    </div>
+                    <div class="regslinks">
+                      <p> Conectar vía </p>
+                      <button type="button" class="btn btn-primary facebook"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                      <button type="button" class="btn btn-success linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></button>
+                      <button type="button" class="btn btn-warning google"><i class="fa fa-google" aria-hidden="true"></i></button>
+                    </div>             
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                  </div>
                 </div>
-                <div class="username">
-                  <label>Apellido</label>
-                  <input class="apellidoregs" type="text" placeholder="Apellido">
-                </div>
-                <div class="username">
-                  <label>Correo electronico</label>
-                  <input class="emailregs" type="email" placeholder="Email">
-                </div>
-                <div class="username">
-                  <label>Password</label>
-                  <input class="passwordregs" type="password" placeholder="Password">
-                </div>
-                <div class="username">
-                  <label>Confirmar Password</label>
-                  <input class="confirmpassregs" type="confimar password" placeholder="Password">
-                </div>
-                <div class="regslinks">
-                  <p> Conectar vía </p>
-                  <button type="button" class="btn btn-primary facebook"><i class="fa fa-facebook" aria-hidden="true"></i></button>
-                  <button type="button" class="btn btn-success linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></button>
-                  <button type="button" class="btn btn-warning google"><i class="fa fa-google" aria-hidden="true"></i></button>
-                </div>             
-              </div>
-              <div class="modal-footer">
-                <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
               </div>
             </div>
-            </div>
-          </div>
-
-        </div>
-
+      </div>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
@@ -203,10 +213,10 @@
     <section id="pr_sec">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs12">
         <div class="title_sec">
           <h1>TRES PASOS PARA COMENZAR</h1>
-          <h2>La solucion para tu empresa a tres clicks de distancia</h2>
+          <h2>Fácil, sencillo y a tres clicks de comenzar tu negocio</h2>
         </div>      
       </div>    
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -216,7 +226,7 @@
           <div class="service_hoverly">
             <i class="fa fa-search"></i>
             <h2>Registrate</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ab odio quas  , voluptate aspernatur!</p>
+            <p></p>
           </div>
         </div>
       </div>        
@@ -227,7 +237,7 @@
           <div class="service_hoverly">
             <i class="fa fa-building"></i>
             <h2>Busca el mejor lugar</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ab odio quas  , voluptate aspernatur!</p>
+            <p></p>
           </div>
         </div>
       </div>        
@@ -238,7 +248,7 @@
           <div class="service_hoverly">
             <i class="fa fa-paper-plane"></i>
             <h2>Reservalo</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ab odio quas  , voluptate aspernatur!</p>
+            <p></p>
           </div>
         </div>
       </div>              

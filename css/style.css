@@ -88,11 +88,9 @@ body {
     padding-left: 10px;
 }
 
-.openhelp .ayudadesktop, .openregs .registraciondesktop, .opensession .sesiondesktop {
+.openhelp .ayudadesktop, .openregs .registraciondesktop, .opensession .sesiondesktop, .host .hostdesktop {
     display:none;
 }
-
-
 
 /* BODY */
 
@@ -156,7 +154,7 @@ div.bajada h2 {
     border-radius: 0;
 }
 .location-border option{
-    padding:5px;
+    font-size: 16px;
 }
 .form-border {
     border-radius: 0;
@@ -206,11 +204,11 @@ div.bajada h2 {
 
 @media(min-width:1001px) {
 
-    .openhelp .ayudamobile, .openregs .registracionmobile, .opensession .sesionmobile {
+    .openhelp .ayudamobile, .openregs .registracionmobile, .opensession .sesionmobile, .host .hostmobile {
         display:none;
     }
 
-    .openhelp .ayudadesktop, .openregs .registraciondesktop, .opensession .sesiondesktop {
+    .openhelp .ayudadesktop, .openregs .registraciondesktop, .opensession .sesiondesktop, .host .hostdesktop {
         display:inline-block;
     }
 
@@ -234,7 +232,11 @@ div.bajada h2 {
     #modaldialoghelp {
         float: right;
         width: 300px;
-        right: 208.21px;
+        right: 100px;
+    }
+    
+    #modalhostdialog{
+        right: 230px;
     }
 
     .modal-header {
@@ -268,7 +270,7 @@ div.bajada h2 {
         width:100% !important;
     }
 
-    #modalsessiondialog {
+    #modalsessiondialog, #modalhostdialog {
         width:300px;
         float: right;
     }
@@ -298,12 +300,25 @@ div.bajada h2 {
         cursor: pointer;
     }
 
+    .footersession {
+        height:40px;
+        padding:10px;
+        padding-top:0;
+    }
+
+    .sessionbutton {
+        position:relative;
+        height:100%;
+        width:100%;
+        border-radius: 0px;
+    }
+
     #modalregs  {
         padding-top: 110px;
         padding-left: 25%;
     }
     
-    #modalsession {
+    #modalsession, #modalhost {
         padding-top: 55px;
     }
 
@@ -317,16 +332,20 @@ div.bajada h2 {
     }    
 
     .username {
+        margin-bottom: 10px;
+    }
+
+    .usernameregs {
         margin-bottom: 15px;
     }
 
-    .username input, .password input {
+    .username input, .password input, .usernameregs input {
         font-size: 15px;
         height: 30px;
         width:100%;
     }
 
-    .username label, .password label {
+    .username label, .password label, .usernameregs input {
         font-size: 15px;
         font-weight: 300;
     }
@@ -384,6 +403,7 @@ div.bajada h2 {
 
     .quinta {
         border:0;
+        padding-bottom: 0;
     }
 
     .username input[placeholder], .password input[placeholder] {
@@ -458,7 +478,7 @@ div.bajada h2 {
 
     .title_sec {
         margin : 0 auto;
-        padding : 0 0 25px 0;
+        padding : 0 0 50px 0;
         text-align : center;
     }
 
@@ -477,7 +497,6 @@ div.bajada h2 {
         transition: all 1s ease 0s;
         -moz-transition: all 1s ease 0s;
         -webkit-transition: all 1s ease 0s;border :1px solid #eeeeee;
-        cursor : pointer;
         text-align : center;
         padding : 61px 0;
 
