@@ -17,7 +17,7 @@
         <li class="host"><a href="host.php" class="hostmobile">¿Querés Hostear?</a><a class="hostdesktop">¿Querés Hostear?</a></li>
         <li class="openhelp"><a href="ayuda.php" class="ayudamobile">Ayuda</a><a class="ayudadesktop">Ayuda</a></li>
         <li class="openregs"><a href="registracion.php" class="registracionmobile">Registración</a><a class="registraciondesktop">Registración</a></li>
-        <li class="opensession"><a href="sesion.php" class="sesionmobile">Sesión</a><a class="sesiondesktop">Sesión</a></li>
+        <li class="opensession"><a href="sesion.php" class="sesionmobile">Iniciar Sesión</a><a class="sesiondesktop">Iniciar Sesión</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

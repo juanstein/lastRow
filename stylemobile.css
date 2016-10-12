@@ -1,0 +1,128 @@
+/* AYUDA MOBILE STYLE */
+
+.content {
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+.list {
+	padding-left: 20px;
+	padding-top: 25px;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.questionanswer {
+	color:#fff;
+	margin-bottom: 20px;
+	font-size: 15px;
+	padding-right: 40px;
+}
+
+.questionhelp p {
+	color:#fff;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	cursor:pointer;
+}
+
+.fa {
+	color:#fff;
+	float:right;
+	margin-right: 20px;
+	font-size: 25px !important;
+}
+
+li.questionhelp ul {
+	display: none;
+}
+
+.quinta .questionanswer {
+	margin-bottom: 0;
+}
+
+
+
+/* SESION MOBILE STYLE */
+
+
+.content-sesion {
+	padding-top: 25%;
+	margin-right: 5%;
+	margin-left:5%;
+}
+
+.username, .password {
+	text-align: center;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+.username label, .password label {
+	color:#fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.username input, .password input {
+	width:80%;
+	margin-left: 20px;
+	height:35px;
+}
+
+.sessionbutton {
+	position:relative;
+	width:80%;
+	margin-left: 20px;
+	font-size: 17px;
+}
+
+
+
+
+/* REGISTRACION MOBILE STYLE */
+
+.sessiontitle h2 {
+	text-align: center;
+	font-size: 19px;
+	color:#fff;
+	margin-bottom: 30px;
+}
+
+.header-darkener {
+    background-image: url(https://thefetchblog.files.wordpress.com/2011/12/inspire9.jpg);
+    z-index: -1;
+}
+
+.grey label {
+	color:#222;
+}
+
+.regslinks {
+	text-align: center;
+}
+
+.modal-footer {
+	border:none;
+}
+
+.modal-footer i {
+    color: #337ab7;
+    cursor: pointer;
+}
+
+.registerarrow {
+	font-size: 35px !important;
+}
+
+.modal-footer button {
+	border:none;
+	background: transparent;
+}

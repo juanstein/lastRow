@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/stylemobile.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -37,6 +38,26 @@
 <body>
 
 <?PHP include 'headermobile.php'; ?>
+
+<header id="header">
+      <div class="header-darkener"></div>
+    <form method="GET" class="content-sesion" action="welcome.php">
+        <div class="body">
+            <div class="username">
+                <label>Nombre de usuario</label>
+                <input class="nombresession" type="email" placeholder="email">
+            </div>
+            <div class="password">
+                <label>Password</label>
+                <input type="password" placeholder="password">
+            </div>
+        </div>
+        <div class="footersession">
+            <button type="submit" class="btn btn-primary sessionbutton">Acceder</button>
+        </div>
+    </form>
+</header>
+
 
     <!-- jQuery -->
     <script   src="js/jquery-2.1.1.js"></script>
