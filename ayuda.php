@@ -16,7 +16,6 @@
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/stylemobile.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -39,10 +38,10 @@
 
 <?PHP include 'headermobile.php'; ?>
 
-<header id="header">
-      <div class="header-darkener"></div>
-            <div class="content">
-              <ul class="list">
+
+            <div class="modal-content" id="modalcontenthelp">
+              <ul class="modal-body">
+
                 <li class="questionhelp primera"><p>¿Que es XXXXXXXXXX?<i class="fa fa-angle-down" aria-hidden="true"></i></p>
                   <ul>
                     <li class="questionanswer">XXXXX es un sitio dedicado a proveer facilidades inmobiliarias para startups bajo la modalidad de espacios de coworking.</li>
@@ -77,14 +76,12 @@
             </div>
           </div>
         </div>
-  </header>
 
     <!-- jQuery -->
     <script   src="js/jquery-2.1.1.js"></script>
 
     <!--javascript customize-->
     <script src="js/main.js"></script>
-    <script type="js/mainmobile.js"></script>
 
     <!-- Bootstrap Core CDN -->
     <script src="js/bootstrap.min.js" ></script>

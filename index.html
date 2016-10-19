@@ -146,23 +146,23 @@
                       <h1>Registración</h1>
                       <h2> Completá tus datos para comenzar</h2>
                   </div>
-                    <div class="usernameregs">
+                    <div class="usernameregs" id="nombreregsdiv">
                       <label>Nombre</label>
-                      <input class="nombreregs" type="text" placeholder="Nombre">
+                      <input class="nombreregs" id="nombreregs" type="text" placeholder="Nombre">
                     </div>
-                    <div class="usernameregs">
+                    <div class="usernameregs" id="apellidoregsdiv">
                       <label>Apellido</label>
                       <input class="apellidoregs" type="text" placeholder="Apellido">
                     </div>
-                    <div class="usernameregs">
+                    <div class="usernameregs" id="emailregsdiv">
                       <label>Correo electronico</label>
                       <input class="emailregs" type="email" placeholder="Email">
                     </div>
-                    <div class="usernameregs">
+                    <div class="usernameregs" id="passwordregsdiv">
                       <label>Password</label>
                       <input class="passwordregs" type="password" placeholder="Password">
                     </div>
-                    <div class="usernameregs">
+                    <div class="usernameregs" id="confirmpassregsdiv">
                       <label>Confirmar Password</label>
                       <input class="confirmpassregs" type="confimar password" placeholder="Password">
                     </div>
@@ -174,7 +174,7 @@
                     </div>             
                   </div>
                   <div class="modal-footer">
-                    <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                    <button type="submit" id="submitButton"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                   </div>
                 </div>
               </div>
@@ -265,6 +265,8 @@
 
     <!-- Bootstrap Core CDN -->
     <script src="js/bootstrap.min.js" ></script>
+
+    <script src="js/regForm.js" ></script>
 
 </body>
 
