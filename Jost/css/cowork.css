@@ -1,0 +1,109 @@
+/* Mobile FIRST */
+
+
+
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    
+}
+
+@media(max-width:767px) {
+
+}
+
+@media(min-width:768px) {
+
+
+}
+
+@media(min-width:991px) {
+
+}
+
+@media(min-width:1001px) {
+
+	/* COWORKING */    
+    
+    .cowork {
+        width:100%;
+        height:1000px;
+        background:#F2F2F2;
+        padding-top:150px;
+        margin-right: 0;
+    }
+
+    .cowork_container {
+        position: relative;
+        height:100%;
+    }
+
+    .cowork_photobox1 {
+        background: url(../img/places/final/lamaquinita.png);
+    }
+
+    .cowork_photobox2 {
+        background:url(../img/places/final/areatres.png);
+    }
+
+    .cowork_photobox3 {
+        background: url(../img/places/final/hit.png);
+    }
+
+    .cowork_photobox4 {
+        background: url(../img/places/final/urbanstation.png);
+    }
+
+    .cowork_photobox5 {
+        background: url(../img/places/final/join.png);
+    }
+
+    .cowork_photobox6 {
+        background: url(../img/places/final/cespedes.png);
+    }
+
+    .cowork_photobox7 {
+        background: url(../img/places/final/belephant.png);
+    }
+    
+
+    .primera-linea, .segunda-linea, .tercera-linea {
+        list-style: none;
+        height: 250px;        
+    }
+
+    .primera-linea li div:first-child , .segunda-linea li div:first-child, .tercera-linea li div:first-child {
+        height: 250px;
+    }
+
+    .primeralinea_primerimagen, .segundalinea_segundaimagen {
+        height:510px !important;
+    }
+
+    .segundalinea_segundaimagen_box, .primeralinea_segundaimagen_box {
+        padding-left:0px;
+        padding-right:0px;
+    }
+
+    .segundalinea_terceraimagen, .primeralinea_terceraimagen {
+        height: 250px;
+    }
+
+    .coworktitle {
+        position:absolute;
+        right:20px;
+        top:20px;
+        font-family: 'Montserrat',sans-serif;
+        color:#000;
+    }
+
+    .cowork_boxtitle {
+        font-size: 14px;
+    }
+
+    .cowork_boxsubtitle {
+        font-size: 10px;
+    }
+
+}

@@ -1,0 +1,157 @@
+/* BODY */
+
+.header_body {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    /*background-color: rgba(0, 0, 0, 0.65);*/
+    background: url(../img/baires.png);
+}
+
+.header-darkener {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.header-darkener img {
+    background: no-repeat; 
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* THREE STEPS */
+
+.container_jostnumbers {
+    position: absolute;
+    bottom:-100px;
+    height:200px;
+    left:45px;
+}
+
+.jostnumbers {
+    height:100%;
+}
+
+.jostnumbers_column {
+    height: 100%;
+    background-color: #fff;
+    padding:25px 0px;
+    list-style: none;
+    z-index: 1;
+    left:-20px;
+}
+
+.jostnumbers_colum_info {
+    height: 100%;
+    border-right:1px solid #999999;
+}
+
+.jostnumbers_colum_info img {
+    width:50px;
+    height:50px;
+    margin-left: 90px;
+}
+
+.jostnumbers_colum_info:last-child {
+    border:none;
+    padding-right: none;
+}
+
+.number {
+    margin-top: 10px;
+    width:100%;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.title {
+    width:100%;
+    font-size: 15px;
+}
+
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    
+}
+
+@media(max-width:767px) {
+
+}
+
+@media(min-width:768px) {
+
+
+}
+
+@media(min-width:991px) {
+
+}
+
+@media(min-width:1001px) {
+
+    .socialcolumn {
+        position:fixed;
+        width:3.2%;
+        height:100%;
+        float:left;
+        z-index: 2;
+        left:4px;
+    }
+
+    .socialcolumn_networks {
+        height:100%;
+        width:100%;
+        padding-left: 0;
+        margin-bottom: 0;
+        padding-top: 20px;
+        z-index: 2;
+        list-style: none;
+    }
+
+    .facebook, .linkedin, .youtube {
+        height:40px;
+        background: transparent;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        border:2px solid #222;
+        margin-bottom: 8px;
+        z-index: 2;
+    }
+
+    .facebook i, .linkedin i, .youtube i {
+       font-size:20px;
+       color:#000;
+       padding-top: 9px;
+       cursor: pointer;
+       z-index: 2;
+    }
+
+    .youtube i {
+        padding-left: 4px
+    }
+
+    .facebook:hover {
+        background:#3b5998;
+    }
+
+    .linkedin:hover {
+        background:#007bb5
+    }
+
+    .youtube:hover {
+        background:#bb0000;
+    }
+
+    .facebook:hover i, .linkedin:hover i, .youtube:hover i {
+        color:#fff;
+    }    
+}
