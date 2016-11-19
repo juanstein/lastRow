@@ -1,28 +1,8 @@
 <header class="header_body">
-      <div class="header-darkener">
-        <div class="socialcolumn">
-          <ul class="socialcolumn_networks">
-            <a href="http://www.facebook.com">
-              <li class="facebook textcenter">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </li>
-            </a>
-            <a href="http://www.facebook.com">
-              <li class="linkedin textcenter">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </li>
-            </a>
-            <a href="http://www.facebook.com">
-              <li class="youtube textcenter">
-                <i class="fa fa-play" aria-hidden="true"></i>
-              </li>
-            </a>
-          </ul>
-        </div>
-        <!--<video autoplay loop>
-          <source src="img/spacious.mp4" type="video/mp4">
-        </video>-->
-      </div>
+  <div class="header-darkener">
+    <!--<video autoplay loop>
+      <source src="img/spacious.mp4" type="video/mp4">
+    </video>-->
       <div class="principal_body">
         <div class="col-md-12 container_jostnumbers">
           <div class="col-md-10 col-md-offset-2 jostnumbers">
@@ -33,20 +13,22 @@
             </ul>
           </div>
         </div>
-      <!--<div class="principal">
-        <div class="titulo">
-          <h2><img src="img/compass_white.png"><br>JOST</h2>
+        <!--<div class="principal">
+          <div class="titulo">
+            <h2><img src="img/compass_white.png"><br>JOST</h2>
+          </div>
         </div>
-      </div>
-      <div class="subtitulo">
-        <div class="bajada col-md-12">
-          <h2>Encontrá el lugar perfecto y comenzá tu emprendimiento</h2>
+        <div class="subtitulo">
+          <div class="bajada col-md-12">
+            <h2>Encontrá el lugar perfecto y comenzá tu emprendimiento</h2>
+          </div>
         </div>
-      </div>
-      <div class="containerform col-md-12">
+        <div class="containerform col-md-12">
           <form class="form-position col-md-5 col-md-offset-4 body_searchform" method="get" action="jost_search.php">
-              <img class="col-md-1 body_searchform_img" src="img/glass.png">
-              <input type="text" name="location" class="location-border col-md-7 body_searchform_bar" placeholder="Ingresá barrio o ciudad"></input>
-          </form>-->
+            <img class="col-md-1 body_searchform_img" src="img/glass.png">
+            <input type="text" name="location" class="location-border col-md-7 body_searchform_bar" placeholder="Ingresá barrio o ciudad"></input>
+          </form>
+        </div>-->
       </div>
+  </div>
 </header>

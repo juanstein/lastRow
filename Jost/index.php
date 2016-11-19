@@ -28,6 +28,9 @@
   <!-- CSS cowork-->
   <link href="css/cowork.css" rel="stylesheet">
 
+  <!-- CSS footer-->
+  <link href="css/footer.css" rel="stylesheet">
+
   <!-- Custom Fonts -->
   <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
